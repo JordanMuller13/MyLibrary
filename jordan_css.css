@@ -1,0 +1,409 @@
+*{
+    padding: 0;
+    font-family: fantasy;            /*Font of first row*/
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color:silver;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    box-shadow: 0 0 10px #99ffec;
+    background: #fff;
+    position: fixed;
+    z-index: 98;
+    align-items: center;
+    left: 0;
+}
+
+section nav .watermark img{
+    width: 100px;
+    margin: 7px 0;
+}
+
+section nav li{
+    display: inline-block;                     /*To make list side by side*/
+    padding: 0 15px;
+}
+
+section nav li s{
+    color:darkblue;                        /*color of first row text*/
+    text-decoration: none;
+    cursor:pointer;
+}
+
+section nav li s:hover{
+    color: #ec99ff;                           /*hover effect*/
+}
+
+section nav .top_icon i{
+    font-size: 25px;
+    margin: 0 5px;
+    padding: 0 18px;                              /*spaces between icons*/
+    cursor:pointer;
+}
+
+section nav .top_icon i:hover{
+    color: #ec99ff;
+}
+
+section .central{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    top: 15%
+}
+
+section .central h1{
+                                     /*font of h1*/
+    position: relative;
+    font-size: 45px;
+    padding-left: 3px;
+    color:rgb(68, 3, 115);
+    text-decoration: underline;
+}
+
+section .central h2{
+    color:black;
+    text-decoration: underline;
+    padding-left: 10px;
+    font-size: 25px;
+}
+
+section .central p{
+    width: 650px;
+    text-align: justify;
+    line-height: 22px;
+    position: relative;
+    padding-left: 3px;
+    top: 5px;
+}
+
+section .central .central_tag .central_btn_1{
+    background: indigo;
+    padding: 10px 20px;
+    position: relative;
+    top: 50px;
+    left: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+section .central .central_tag .central_btn_2{
+    background: indigo;
+    padding: 10px 20px;
+    position: relative;
+    top: 50px;
+    left: 350px;
+    color: #fff;
+    text-decoration: none;
+}
+
+section .central .central_img img{
+    box-shadow: 0 0 25px black;
+}
+
+
+/*Featured_Books*/
+
+.main_books{
+    width: 100%;
+    height: 100vh;
+    padding: 45px 0;
+}
+
+.main_books h1{                                                      /*heading*/
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+
+.main_books .featured_books_mainbox{                                   /*Align as grid*/
+    width: 95%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin: 0 auto;
+}
+
+.main_books .featured_books_mainbox .featured_books_tag{                   /*card specs*/
+    width: 250px;
+    height: 420px;
+    text-align: center;
+    padding: 5px;
+    border: 3px solid indigo;
+    margin: auto 20px;
+}
+
+.main_books .featured_books_mainbox .featured_books_tag:hover{                /*Hover Effect*/
+    box-shadow: 0 0 15px navy;
+}
+
+.main_books .featured_books_mainbox .featured_books_tag .featured_books_info h2{                       /*heading 2 space from top*/
+    margin: 10px;
+}
+
+.main_books .featured_books_mainbox .featured_books_tag .featured_books_info .author{                    /*author color*/
+    color: darkslategray
+}
+
+.main_books .featured_books_mainbox .featured_books_tag .featured_books_info .theme{                      /*genre color*/
+    margin-top: 3px;
+    color:darkblue
+}
+
+.main_books .featured_books_mainbox .featured_books_tag .featured_books_info .book_cost{                  /*Price now*/
+    margin-top: 5px;
+    font-weight: bold;
+    color:forestgreen;
+}
+
+.main_books .featured_books_mainbox .featured_books_tag .featured_books_info .book_cost sub{              /*cut price*/
+    font-weight:100;
+    padding: 0 5px;
+    color:crimson
+}
+
+.main_books .featured_books_mainbox .featured_books_tag .featured_books_info .description{                /*Description*/
+    font-family: sans-serif;
+    text-align: left;
+    font-weight: bold;
+    font-size:small;
+    color:black
+}
+
+.main_books .featured_books_mainbox .featured_books_tag .featured_books_info .i_btn{
+    font-size: small;
+    padding: 5px 10px;
+    border: 2px solid purple;
+    text-decoration: none;
+    color:black;
+    position: relative;
+    top: -10px;
+    left: 65px;
+}
+
+
+::-webkit-scrollbar{                       /*scroll bar tools*/
+    width: 7px;
+    height: 5px;
+
+}
+
+::-webkit-scrollbar-thumb{
+    background:darkblue;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 8px rgb(#fff);
+}
+
+/*New Books Arrivals*/
+
+.new_arrivals{
+    width: 100%;
+    height: 100vh;
+    /*margin-bottom: 35px; */
+    margin: -70px auto;
+}
+
+.new_arrivals h1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    margin-bottom: 30px;
+
+}
+
+.new_arrivals .new_arrivals_mainbox{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin: 0 auto;
+
+}
+
+.new_arrivals .new_arrivals_mainbox .new_arrivals_frame{
+    width: 250px;
+    height: 420px;
+    text-align: center;
+    padding: 25px;
+    border: 3px solid rgb(255, 0, 187);
+    margin: auto 20px;
+}
+
+.new_arrivals .new_arrivals_mainbox .new_arrivals_frame:hover{
+    box-shadow: 0 0 15px palevioletred;
+}
+
+.new_arrivals .new_arrivals_mainbox .new_arrivals_frame .description{
+    font-weight:lighter;
+    font-size:small;
+    color:black
+}
+
+.new_arrivals .new_arrivals_mainbox .new_arrivals_frame .new_arrivals_tag .p{
+    margin: 10px;
+}
+
+
+
+/*services*/
+
+.services{
+    width: 100%;
+    height: auto;
+    margin: -150px 0px;
+    margin-bottom: 35px;                                             /*position*/
+}
+
+.services .services_box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.services .services_box .services_card{
+    text-align: center;
+    width: 310 px;
+    height: auto;
+    box-shadow: 0 0 8px #089;
+    background-color: azure;
+    padding: 15px 10px;
+}
+
+.services .services_box .services_card i{
+    color:chocolate;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.services .services_box .services_card h3{
+    margin-bottom: 20px;
+
+}
+
+.services .services_box .services_card p{
+    font-style: italic;
+}
+
+/*Client Reviews*/
+
+.client_reviews{
+    height: auto;
+    width: 100%;
+}
+
+.client_reviews h1{
+    font-size: 45px;
+    margin-top: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.client_reviews .client_reviews_box{
+    width: 95%;
+    height: 60vh;
+    margin: -30px auto;
+    display: flex;
+    align-items: center;
+}
+
+.client_reviews .client_reviews_box .client_reviews_frame{
+    width: 390px;
+    height: 290px;
+    padding: 15px;
+    margin: 0 12px;
+    box-shadow: 0 0 10px rebeccapurple
+}
+
+.client_reviews .client_reviews_box .client_reviews_frame i{
+    font-size: 100px;
+    float: right;
+    position: relative;
+    color:rgb(82, 82, 217);
+    bottom: 20px;
+}
+
+.client_reviews .client_reviews_box .client_reviews_frame img{
+    border-radius: 50%;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.client_reviews .client_reviews_box .client_reviews_frame p{
+    margin: 10px 0 10px 0;
+    line-height: 22px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.client_reviews .client_reviews_box .client_reviews_frame .stars i{
+    font-size: 18px;
+    margin-top: 20px;
+    color:brown;
+    float: left;
+    padding: 0 1px;
+}
+
+/*Footer*/
+
+footer{
+    width:100;
+    background-color: white;
+}
+
+footer .footer_page{
+    width:100%;
+    justify-content: space-around;
+    display: flex;
+}
+
+
+footer .footer_page .tag img{
+    margin-bottom: 12px;
+}
+
+footer .footer_page .tag p{
+    width: 250px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+footer .footer_page .tag h1{
+    font-weight: lighter;
+    font-size: 25px;
+    margin: 25px 0;
+    color:rgb(68, 3, 115);
+}
+
+footer .footer_page .tag a{
+    color:black;
+    margin: 10px 0;
+    display: block;
+    text-decoration: none;
+}
+
